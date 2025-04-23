@@ -62,6 +62,7 @@ For training efficiency, we use a balanced subset:
 - `evaluate.py`: Evaluates the model and compares with baseline
 - `inference.py`: Provides a simple interface for making predictions
 - `error_analysis.py`: Analyzes model errors and optimizes decision threshold
+- `visualize_results.py`: Generates visualizations of model performance and analysis
 - `requirements.txt`: Lists all required dependencies
 - `output/`: Contains trained models and evaluation results
 
@@ -137,6 +138,18 @@ Key findings from error analysis:
 - Shorter texts (0-50 characters) have higher false positive rates (50%)
 - Text length correlates inversely with error rate
 - An optimized threshold of 0.7 (vs. default 0.5) provides better precision with minimal impact on recall
+
+##  Visualization
+To generate visualizations of the results:
+python visualize_results.py
+This script creates four key visualizations:
+
+Confusion Matrix - Shows classification performance
+Score Distribution - Displays prediction score distributions by class
+Baseline Comparison - Compares baseline and fine-tuned model performance
+Threshold Analysis - Shows performance metrics across different thresholds
+
+All visualizations are saved to ./output/toxic_detection_improved/evaluation/visualizations/
 
 ## Future Improvements
 
