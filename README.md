@@ -61,7 +61,7 @@ For training efficiency, we use a balanced subset:
 - `train_smaller.py`: Handles model training and hyperparameter optimization
 - `evaluate.py`: Evaluates the model and compares with baseline
 - `inference.py`: Provides a simple interface for making predictions
-- `error_analysis.py`: Analyzes model errors and optimizes decision threshold
+- `updated_error_analysis.py`: Analyzes model errors and optimizes decision threshold
 - `visualize_results.py`: Generates visualizations of model performance and analysis
 - `requirements.txt`: Lists all required dependencies
 - `output/`: Contains trained models and evaluation results
@@ -111,7 +111,7 @@ This provides an example of using the `ToxicityDetector` class for real-time tox
 To analyze model performance and optimize the decision threshold:
 
 ```
-python error_analysis.py
+python updated_error_analysis.py
 ```
 
 This script conducts a detailed analysis of model errors and identifies an optimal decision threshold.
